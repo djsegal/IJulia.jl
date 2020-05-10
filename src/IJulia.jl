@@ -40,6 +40,7 @@ using Dates: now
 import Random
 using Base64: Base64EncodePipe
 import REPL
+using Observables
 
 const depfile = joinpath(dirname(@__FILE__), "..", "deps", "deps.jl")
 isfile(depfile) || error("IJulia not properly installed. Please run Pkg.build(\"IJulia\")")

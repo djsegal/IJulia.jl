@@ -19,7 +19,7 @@ function __init__()
 end
 
 # the following constants need to be initialized in init().
-const publish = Ref{Socket}()
+const publish = Observable{Socket}()
 const raw_input = Ref{Socket}()
 const requests = Ref{Socket}()
 const control = Ref{Socket}()

@@ -115,7 +115,7 @@ function execute_request(socket, msg)
                                  Dict("execution_count" => n,
                                               "metadata" => result_metadata,
                                               "data" => result_data)))
-
+            publish[] = publish.val
         end
         send_ipython(requests[],
                      msg_reply(msg, "execute_reply",
